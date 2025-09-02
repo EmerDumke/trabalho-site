@@ -1,0 +1,92 @@
+/* Reset geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Conteúdo principal ocupa espaço à esquerda */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Barra lateral direita (menu) */
+nav {
+    background-color: #001f4d; 
+    width: 200px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Amarelo destaque ao passar o mouse */
+}
+
+/* Rodapé fixado no fim da tela */
+footer {
+    background-color: transparent; 
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/* Estilo dos inputs e textarea */
+form input, 
+form textarea {
+    width: 100%;               
+    padding: 10px;              
+    margin: 10px 0;             
+    border: 2px solid #001f4d;  
+    border-radius: 8px;         
+    background-color: #f0f4ff;  
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Destaque quando o usuário clica no campo */
+form input:focus,
+form textarea:focus {
+    border-color: #003366;      
+    outline: none;
+    background-color: #e6f0ff;  
+}
+
+/* Botão de enviar */
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #001f4d;  
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #003366;  
+}
